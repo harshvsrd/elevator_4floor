@@ -17,7 +17,7 @@ As seen in `image_695389.png`, the repository is structured to separate differen
 
 > **Note:** The state diagram below specifically represents the **Moore machine** implementation located in the `moore_model/` directory, which splits the door sequence into two distinct states to maintain strict state-dependent outputs.
 
-![FSM Diagram](Elevator State Transition-2026-08-30-072528.png)
+![FSM Diagram](Elevator_State_Transition-2026-08-30-072528.png)
 
 ## 🧠 Design Evolution: Mealy vs. Moore
 

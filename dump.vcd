@@ -1,0 +1,519 @@
+$date
+	Sun Aug 30 02:55:17 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_elevator $end
+$var wire 1 ! opening $end
+$var wire 1 " motorup $end
+$var wire 1 # motordown $end
+$var wire 2 $ currentfloor [1:0] $end
+$var wire 1 % closing $end
+$var reg 1 & clk $end
+$var reg 1 ' close $end
+$var reg 1 ( floor_sensor $end
+$var reg 1 ) obstacle $end
+$var reg 1 * open $end
+$var reg 1 + overload $end
+$var reg 4 , req [3:0] $end
+$var reg 1 - rst $end
+$scope module uut $end
+$var wire 1 & clk $end
+$var wire 1 ' close $end
+$var wire 1 ( floor_sensor $end
+$var wire 1 ) obstacle $end
+$var wire 1 * open $end
+$var wire 1 + overload $end
+$var wire 4 . req [3:0] $end
+$var wire 1 / req_above $end
+$var wire 1 0 req_below $end
+$var wire 1 - rst $end
+$var wire 1 1 req_here $end
+$var parameter 32 2 door $end
+$var parameter 32 3 idle $end
+$var parameter 32 4 movingdown $end
+$var parameter 32 5 movingup $end
+$var reg 1 % closing $end
+$var reg 2 6 currentfloor [1:0] $end
+$var reg 1 7 door_is_closing $end
+$var reg 1 # motordown $end
+$var reg 1 " motorup $end
+$var reg 2 8 next_state [1:0] $end
+$var reg 1 ! opening $end
+$var reg 4 9 pending_reqs [3:0] $end
+$var reg 2 : state [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 5
+b10 4
+b0 3
+b11 2
+$end
+#0
+$dumpvars
+bx :
+bx 9
+b0 8
+x7
+bx 6
+x1
+x0
+x/
+b0 .
+1-
+b0 ,
+0+
+0*
+0)
+0(
+1'
+0&
+0%
+bx $
+0#
+0"
+0!
+$end
+#5
+0/
+00
+07
+01
+b0 9
+b0 $
+b0 6
+b0 :
+1&
+#10
+0&
+#15
+1&
+0-
+#20
+0&
+#25
+1"
+b1 8
+1/
+b1010 9
+1&
+b1010 ,
+b1010 .
+#30
+0&
+#35
+1"
+b1 :
+1&
+b0 ,
+b0 .
+#40
+0&
+#45
+1&
+#50
+0&
+#55
+b11 8
+0"
+11
+b1 $
+b1 6
+1&
+1(
+#60
+0&
+#65
+1!
+b11 :
+1&
+0(
+#70
+0&
+#75
+1!
+01
+b1000 9
+1&
+#80
+0&
+#85
+1%
+17
+0!
+1&
+0'
+1*
+#90
+0&
+#95
+1&
+#100
+0&
+#105
+1"
+b0 :
+b1 8
+0%
+1&
+1'
+0*
+#110
+0&
+#115
+1"
+07
+b1 :
+1&
+#120
+0&
+#125
+b10 $
+b10 6
+1&
+1(
+#130
+0&
+#135
+1&
+0(
+#140
+0&
+#145
+1&
+#150
+0&
+#155
+0/
+b11 8
+0"
+11
+b11 $
+b11 6
+1&
+1(
+#160
+0&
+#165
+1!
+b11 :
+1&
+0(
+#170
+0&
+#175
+1!
+01
+b0 9
+1&
+#180
+0&
+#185
+1%
+17
+0!
+1&
+0'
+1*
+#190
+0&
+#195
+1&
+#200
+0&
+#205
+b0 :
+b0 8
+0%
+1&
+1'
+0*
+#210
+0&
+#215
+1#
+b10 8
+10
+07
+b1 9
+1&
+b1 ,
+b1 .
+#220
+0&
+#225
+1#
+b10 :
+1&
+b0 ,
+b0 .
+#230
+0&
+#235
+1&
+#240
+0&
+#245
+b10 $
+b10 6
+1&
+1(
+#250
+0&
+#255
+1&
+0(
+#260
+0&
+#265
+1&
+#270
+0&
+#275
+b1 $
+b1 6
+1&
+1(
+#280
+0&
+#285
+1&
+0(
+#290
+0&
+#295
+1&
+#300
+0&
+#305
+00
+b11 8
+0#
+11
+b0 $
+b0 6
+1&
+1(
+#310
+0&
+#315
+1!
+b11 :
+1&
+0(
+#320
+0&
+#325
+1!
+01
+b0 9
+1&
+#330
+0&
+#335
+1%
+17
+0!
+1&
+0'
+1*
+#340
+0&
+#345
+1&
+#350
+0&
+#355
+b0 :
+b0 8
+0%
+1&
+1'
+0*
+#360
+0&
+#365
+1"
+b1 8
+1/
+07
+b100 9
+1&
+b100 ,
+b100 .
+#370
+0&
+#375
+1"
+b1 :
+1&
+b0 ,
+b0 .
+#380
+0&
+#385
+1&
+#390
+0&
+#395
+b1 $
+b1 6
+1&
+1(
+#400
+0&
+#405
+1&
+0(
+#410
+0&
+#415
+1&
+#420
+0&
+#425
+0/
+b11 8
+0"
+11
+b10 $
+b10 6
+1&
+1(
+#430
+0&
+#435
+1!
+b11 :
+1&
+0(
+#440
+0&
+#445
+1!
+01
+b0 9
+1&
+#450
+0&
+#455
+1%
+17
+0!
+1&
+0'
+1*
+#460
+0&
+#465
+1!
+0%
+07
+1&
+1)
+#470
+0&
+#475
+1&
+#480
+0&
+#485
+1%
+0!
+17
+1&
+0)
+#490
+0&
+#495
+1&
+#500
+0&
+#505
+b0 :
+b0 8
+0%
+1&
+1'
+0*
+#510
+0&
+#515
+07
+1&
+#520
+0&
+#525
+b11 :
+1!
+b11 8
+1&
+1+
+#530
+0&
+#535
+1&
+#540
+0&
+#545
+1&
+#550
+0&
+#555
+1&
+#560
+0&
+#565
+1!
+1&
+0+
+#570
+0&
+#575
+1&
+#580
+0&
+#585
+1%
+17
+0!
+1&
+0'
+1*
+#590
+0&
+#595
+1&
+#600
+0&
+#605
+b0 :
+b0 8
+0%
+1&
+1'
+0*
+#610
+0&
+#615
+07
+1&
+#620
+0&
+#625
+1&
+#630
+0&
+#635
+1&
+#640
+0&
+#645
+1&
